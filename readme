@@ -1,0 +1,12 @@
+1.Create a spring boot project on start.spring.io project with Web and Spring Security dependency added,
+2. Add dependency for  JWT
+<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt</artifactId>
+    <version>0.9.1</version>
+</dependency>
+3.Add JwtUserDetailsService.java class for setting your credential.
+4.Create below class to configure your userDetail service to be used by spring security.
+@Configuration
+ public class SecurityConfiguration {....}
